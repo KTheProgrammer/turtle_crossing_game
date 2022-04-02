@@ -27,6 +27,7 @@ while game_is_on:
     for car in cars.my_cars:
         if car.distance(spot) < 30:
             scores.game_over()
+            scores.set_high_score()
             game_is_on = False
 
     # Detect finish line
